@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F Autos</title>
+    <link rel="shortcut icon" href="../imgs/icons/carro-favicon.png" type="image/x-icon">
+    <link href="../css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("IpYOy6l4l5igdh8Lv");
+        })();
+    </script>
+</head>
+
+<body class="h-screen  w-full">
+    <header class="w-full h-24 flex justify-between items-center bg-[#BF2121] shadow-[#A6212C] fixed z-50 px-4">
+        
+        <a href="#home"><img src="../imgs/fautos-logo.jpeg" alt="Logotipo do site" class="w-[8rem] md:w-[10rem] lg:w-[10rem] border-2 rounded"></a>
+        
+        <!-- Menu hambúrguer -->
+        <button id="menu-button" class="md:hidden block text-white focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    
+        <nav id="menu" class="hidden md:flex flex-col md:flex-row items-center w-full md:w-auto absolute md:relative top-24 left-0 md:top-0 md:left-0 transition-all duration-300 ease-in-out">
+            <ul class="flex flex-col md:hidden items-center w-full divide-y divide-gray-300 bg-[#BF2121]">
+                <li><a href="#home"
+                        class="block w-full text-center py-3 hover:bg-white hover:text-[#BF2121] transition-all duration-200 text-lg">Home</a>
+                </li>
+                <li><a href="#sobre"
+                        class="block w-full text-center py-3 hover:bg-white hover:text-[#BF2121] transition-all duration-200 text-lg">Sobre</a>
+                </li>
+                <li><a href="#serviços"
+                        class="block w-full text-center py-3 hover:bg-white hover:text-[#BF2121] transition-all duration-200 text-lg">Serviços</a>
+                </li>
+                <li><a href="#testemunhos"
+                        class="block w-full text-center py-3 hover:bg-white hover:text-[#BF2121] transition-all duration-200 text-lg">Testemunhos</a>
+                </li>
+                <li><a href="#contato"
+                        class="block w-full text-center py-3 hover:bg-white hover:text-[#BF2121] transition-all duration-200 text-lg">Contato</a>
+                </li>
+                <li>
+                    <a href="https://wa.me/5585996483792?text=Olá,%20queria%20mais%20informações%20sobre%20os%20serviços%20e%20saber%20mais%20sobre%20o%20processo%20e%20valores.%20Obrigado!"
+                        target="_blank"
+                        class="block w-full text-center py-3 text-lg font-semibold italic hover:underline transition-all duration-200">
+                        <img src="../imgs/icons/whatsapp-icon.png" alt="ícone do whatsapp" class="inline w-8">Chame-nos no
+                        Whatsapp!</a>
+                </li>
+            </ul>
+
+            <ul class="hidden md:flex flex-row w-full justify-between items-center gap-4">
+                <li class="active:scale-95"><a href="#home"
+                        class="active:shadow-white active:shadow border-2 rounded-md px-4 py-2 text-white hover:bg-white hover:text-[#BF2121] transition-all duration-200 text-base">Home</a>
+                </li>
+                <li class="active:scale-95"><a href="#sobre"
+                        class="active:shadow-white active:shadow border-2 rounded-md px-4 py-2 text-white hover:bg-white hover:text-[#BF2121] transition-all duration-200 text-base">Sobre</a>
+                </li>
+                <li class="active:scale-95"><a href="#serviços"
+                        class="active:shadow-white active:shadow border-2 rounded-md px-4 py-2 text-white hover:bg-white hover:text-[#BF2121] transition-all duration-200 text-base">Serviços</a>
+                </li>
+                <li class="active:scale-95"><a href="#testemunhos"
+                        class="active:shadow-white active:shadow border-2 rounded-md px-4 py-2 text-white hover:bg-white hover:text-[#BF2121] transition-all duration-200 text-base">Testemunhos</a>
+                </li>
+                <li class="active:scale-95"><a href="#contato"
+                        class="active:shadow-white active:shadow border-2 rounded-md px-4 py-2 text-white hover:bg-white hover:text-[#BF2121] transition-all duration-200 text-base">Contato</a>
+                </li>
+                <li class="active:scale-95">
+                    <a href="https://wa.me/5585996483792?text=Olá,%20queria%20mais%20informações%20sobre%20os%20serviços%20e%20saber%20mais%20sobre%20o%20processo%20e%20valores.%20Obrigado!"
+                        target="_blank"
+                        class="flex items-center text-base text-white font-semibold italic hover:underline active:scale-[99%]">
+                        <img src="../imgs/icons/whatsapp-icon.png" alt="ícone do whatsapp" class="w-8 m-1 ">Chame-nos no
+                        Whatsapp!</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="w-full pt-24">
+        <!-- HOME -->
+        <section id="home" class="scroll-mt-24 w-full bg-black">
+            <div class="flex flex-wrap justify-center items-center gap-x-10 lg:gap-x-20 py-10  p-4" >
+                <div class="flex flex-col flex-wrap justify-center items-center text-center md:text-start md:items-start w-[20rem]">
+                    <p class="lg:text-4xl 2xl:text-5xl text-3xl font-bold">
+                        Qualidade no serviço e
+                        compromisso com o cliente. <br>
+                        só aqui na F. Autos!
+                    </p>
+                    <button type="submit"
+                        class="active:scale-95 active:shadow-white active:shadow my-4 border-2 rounded-md px-4 py-2 hover:bg-white hover:text-black text-lg"><a
+                            href="https://wa.me/5585996483792?text=Olá,%20queria%20agendar%20um%20orçamento!"
+                            target="_blank">Agende um orçamento conosco!</a></button>
+                </div>
+                <div>
+                    <img src="../imgs/carro-banner-inicial.jpg" alt="Imagem de um carro no banner principal" class="w-[20rem] lg:w-[34rem] border-2 rounded-md">
+                </div>
+            </div>
+        </section>
+        <!-- SOBRE -->
+        <section id="sobre" class="scroll-mt-24 w-full bg-[#9FA2A6]">
+            <div class="flex flex-wrap justify-center items-center gap-x-10 xl:py-10 px-4">
+                <h1 class="sm:w-full text-center text-3xl lg:text-4xl 2xl:text-5xl align-top font-semibold p-4">Sobre nós</h1>
+                <!-- SLIDER -->
+                <div class="slider-container border-2 rounded-md 2xl:size[40rem] size-[28rem] relative">
+                    <!-- Slider principal -->
+                    <div class="swiper mySwiper" style="width: 100%; height: 100%;">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="../imgs/slide1.jpg" alt="Imagem 1"
+                                    style="width: 100%; height: 100%; object-fit: cover;"></div>
+                            <div class="swiper-slide"><img src="../imgs/slide2.jpg" alt="Imagem 2"
+                                    style="width: 100%; height: 100%; object-fit: cover;"></div>
+                            <div class="swiper-slide"><img src="../imgs/ceo-lineu.jpeg" alt="Imagem 3"
+                                    style="width: 100%; height: 100%; object-fit: cover;"></div>
+                        </div>
+
+                        <!-- Controles de navegação -->
+                        <div class="swiper-button-next" style="color: #fff;"></div>
+                        <div class="swiper-button-prev" style="color: #fff;"></div>
+
+                        <!-- Indicadores -->
+                        <div class="swiper-pagination" style="color: red;"></div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col flex-wrap text-justify w-[40rem]">
+                    <p class="text-lg p-4">
+                        A F Autos é uma oficina especializada em serviços de pintura automotiva, reconhecida pela
+                        qualidade e precisão no atendimento ao cliente. Com mais de 20 anos de experiência no setor, seu
+                        fundador, um ex-especialista de grandes corporações, decidiu criar um espaço onde a excelência
+                        no acabamento e a atenção aos detalhes são prioridades. Utilizando técnicas avançadas e produtos
+                        de alta performance, a F Autos se destaca pela eficiência no processo de recuperação e
+                        personalização de veículos, garantindo resultados impecáveis e a satisfação de cada cliente.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- SERVIÇOS -->
+        <section id="serviços" class="scroll-mt-24 w-full bg-[black]">
+            <h1 class="text-center text-3xl lg:text-4xl 2xl:text-5xl align-top font-semibold py-4">Nossos serviços</h1>
+            <div class="flex flex-wrap justify-center items-center  p-4 relative z-0">
+                <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="500"
+                    class="serviço1 flex flex-col w-[18rem] h-[32rem] m-4 text-center justify-center items-center border-2 rounded">
+                    <div class="overflow-hidden">
+                        <img class="h-[28rem] hover:scale-105" src="../imgs/funilaria-automotiva.jpg"
+                            alt="Imagem de serviço: Funilaria">
+                    </div>
+                    <div class="p-4 m-0 w-full h-[4rem] border-t-2 bg-[#BF2121] justify-center items-center">
+                        <h1 class=" text-xl font-semibold">Funilaria</h1>
+                    </div>
+                </div>
+
+                <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000"
+                    class="serviço2 flex flex-col w-[18rem] h-[32rem] m-4 text-center justify-center items-center border-2 rounded">
+                    <div class="overflow-hidden">
+                        <img class="h-[28rem] hover:scale-105" src="../imgs/pintura-automotiva.jpg"
+                            alt="Imagem de serviço: Pintura automotiva">
+                    </div>
+                    <div class="p-4 m-0 w-full h-[4rem] border-t-2 bg-[#BF2121] justify-center items-center">
+                        <h1 class=" text-xl font-semibold">Pintura Automotiva</h1>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500"
+                    class="serviço3 flex flex-col w-[18rem] h-[32rem] m-4 text-center justify-center items-center border-2 rounded">
+                    <div class="overflow-hidden">
+                        <img class="h-[28rem] hover:scale-105" src="../imgs/polimento-automotivo.jpg"
+                            alt="Imagem de serviço: Polimento cristalizado">
+                    </div>
+                    <div class="p-4 m-0 w-full h-[4rem] border-t-2 bg-[#BF2121] justify-center items-center">
+                        <h1 class=" text-xl font-semibold">Polimento cristalizado</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full text-center p-4">
+                <button type="submit"
+                    class="active:scale-95 active:shadow-white active:shadow mb-10 pl-4 border-2 rounded-md px-4 py-2 hover:bg-white hover:text-black text-lg"><a
+                        href="https://wa.me/5585996483792?text=Olá,%20queria%20agendar%20um%20orçamento!"
+                        target="_blank">Agende um orçamento conosco!</a></button>
+            </div>
+        </section>
+        <!-- TESTEMUNHOS -->
+        <section id="testemunhos" class="scroll-mt-24 w-full bg-[#9FA2A6]">
+            <h1 class="text-center text-3xl lg:text-4xl 2xl:text-5xl align-center font-semibold p-4">Depoimentos de nossos clientes</h1>
+            <div class="flex flex-wrap justify-center items-center px-4 relative z-0">
+
+                <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" class="w-full gap-y-10 p-4">
+                    <div>
+                        <h1 class="text-center text-2xl align-center font-semibold">Ana Souza</h1>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <img src="../imgs/review1.jpg" alt="Foto do cliente" class="w-[10rem] border-2 rounded-full">
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <p class="w-[40rem] text-lg text-center italic">
+                            "Tive um arranhão profundo no capô do meu carro e eles fizeram uma pintura muito boa. Parece
+                            que nunca teve o arranhão! Recomendo demais."
+                        </p>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000" class="w-full gap-y-10 p-4">
+                    <div>
+                        <h1 class="text-center text-2xl align-center font-semibold">João Santos</h1>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <img src="../imgs/review2.jpg" alt="Foto do cliente" class="w-[10rem] border-2 rounded-full">
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <p class="w-[40rem] text-lg text-center italic">
+                            "Levei meu carro com a lateral amassada, e a equipe deixou ele como se nunca
+                            tivesse acontecido nada. Trabalho muito bem feito!"
+                        </p>
+                    </div>
+                </div>
+
+                <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" class="w-full gap-y-10 p-4">
+                    <div>
+                        <h1 class="text-center text-2xl align-center font-semibold">Carlos Pereira</h1>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <img src="../imgs/review3.jpg" alt="Foto do cliente" class="w-[10rem] border-2 rounded-full">
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <p class="w-[40rem] text-lg text-center italic">
+                            "Pedi uma pintura completa, e a qualidade do acabamento foi
+                            impressionante. Fiquei muito satisfeito com o resultado."
+                        </p>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000" class="w-full gap-y-10 pb-10 p-4">
+                    <div>
+                        <h1 class="text-center text-2xl align-center font-semibold">Maria Oliveira</h1>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <img src="../imgs/review4.jpg" alt="Foto do cliente" class="w-[10rem] border-2 rounded-full">
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <p class="w-[40rem] text-lg text-center italic">
+                            "Tive que consertar um amassado no porta-malas e aproveitei para fazer um polimento.
+                             Serviço rápido, de confiança e o carro parece novinho!"
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- CONTATO -->
+        <section id="contato" class="scroll-mt-24 w-full bg-[black]">
+            <h1 class="text-center text-3xl lg:text-4xl 2xl:text-5xl align-center font-semibold p-4">Contato</h1>
+            <div class="flex flex-wrap justify-center items-center p-4 relative z-0">
+                <form id="contactForm" action="" class="flex flex-col justify-center items-start w-[24rem] md:w-[40rem]">
+                    <label for="nome" class="text-lg mb-1">Nome: </label>
+                    <input type="text" name="nome" id="nome"
+                        class="text-black mb-4 w-full px-4 py-2 border-2 rounded-md focus:outline-none" placeholder="Seu nome" required>
+
+                    <label for="email" class="text-lg mb-1">Email: </label>
+                    <input type="email" name="email" id="email"
+                        class="text-black mb-4 w-full px-4 py-2 border-2 rounded-md focus:outline-none" placeholder="Seu email" required>
+
+                    <label for="mensagem" class="text-lg mb-1">Sua mensagem: </label>
+                    <textarea name="mensagem" id="mensagem"
+                        class="text-black w-full h-[10rem] resize-none mb-4 px-4 py-2 border-2 rounded-md focus:outline-none"
+                        placeholder="Sua mensagem" required></textarea>
+
+                    <div class="w-full text-center">
+                        <button id="enviarDados" type="submit"
+                            class="active:scale-95 active:shadow-white active:shadow mb-4 pl-4 border-2 rounded-md px-4 py-2 hover:bg-white hover:text-black text-lg">Enviar</button>
+
+                        <p class="text-lg">Ou nos envie um <a
+                                href="https://wa.me/5585996483792" target="_blank"
+                                class="text-green-500 underline hover:scale-95">Zap!</a></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <section class="w-full bg-[#9FA2A6]">
+            <div class="flex flex-wrap justify-center items-center md:gap-x-20 lg:gap-x-20 xl:gap-x-40 2xl:gap-x-[50%] p-4">
+                <div class="">
+                    <div class="flex justify-start items-center py-2">
+                        <img src="../imgs/icons/local.png" alt="ícone de local" class="w-8">
+                        <a href="https://maps.app.goo.gl/mVoSFcYhUPuNCvsQ7" class="pl-2 hover:underline" target="_blank">Av. Dionísio Leonel Alencar, 1520 - Ancuri - Fortaleza</a>
+                    </div>
+
+                    <div class="flex justify-start items-center pb-2">
+                        <img src="../imgs/icons/email.png" alt="ícone de email" class="w-8">
+                        <a href="mailto:fautos150@gmail.com" class="pl-2 hover:underline" target="_blank">fautos150@gmail.com</a>
+                    </div>
+                    
+                    <div class="flex justify-start items-center pb-2">
+                        <img src="../imgs/icons/telefone.png" alt="ícone de telefone" class="w-8">
+                        <p class="pl-2">(85) 99648-3792</p>
+                    </div>
+                    
+                    <div class="flex justify-start items-center pb-2">
+                        <img src="../imgs/icons/instagram.png" alt="ícone de instagram" class="w-8">
+                        <a href="https://www.instagram.com/f_autos_ca/" class="pl-2 hover:underline" target="_blank">f_autos_ca</a>
+                    </div>
+                </div>
+
+                <div>
+                    <iframe class="size-[18rem] border-2 rounded-md"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.8230729489305!2d-38.506151024291775!3d-3.848125743794435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c750151c4aa9fd%3A0x2e1473a60c397a5b!2sF.Autos%20Centro%20Automotivo!5e0!3m2!1spt-BR!2sbr!4v1728936557040!5m2!1spt-BR!2sbr"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="w-full text-center py-10">
+                <p class="text-base">Desenvolvido por <a href="https://github.com/paulodiego" class="hover:underline" target="_blank">Paulo Diego©</a></p>
+            </div>
+        </section>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({
+        offset: 120, 
+        duration: 800,
+        once: true,
+    });</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/slider.js"></script>
+    
+    <script src="../js/emailjs.js"></script>
+
+    <script src="../js/menu.js"></script>
+</body>
+
+</html>

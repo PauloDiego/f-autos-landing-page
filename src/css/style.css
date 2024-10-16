@@ -1,0 +1,41 @@
+/* GERAL STYLE */
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: "Exo 2";
+    color: white;
+}
+
+
+/* STYLE SLIDER */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-button-next, 
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  --swiper-pagination-color: white;
+}
