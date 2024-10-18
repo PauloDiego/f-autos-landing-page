@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +17,7 @@
 
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function(){
+        (function () {
             emailjs.init("IpYOy6l4l5igdh8Lv");
         })();
     </script>
@@ -24,17 +25,20 @@
 
 <body class="h-screen  w-full">
     <header class="w-full h-24 flex justify-between items-center bg-[#BF2121] shadow-[#A6212C] fixed z-50 px-4">
-        
-        <a href="#home"><img src="./fautos-logo.jpeg" alt="Logotipo do site" class="w-[8rem] md:w-[10rem] lg:w-[10rem] border-2 rounded"></a>
-        
+
+        <a href="#home"><img src="./fautos-logo.jpeg" alt="Logotipo do site"
+                class="w-[8rem] md:w-[10rem] lg:w-[10rem] border-2 rounded"></a>
+
         <!-- Menu hambúrguer -->
         <button id="menu-button" class="md:hidden block text-white focus:outline-none">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
         </button>
-    
-        <nav id="menu" class="hidden md:flex flex-col md:flex-row items-center w-full md:w-auto absolute md:relative top-24 left-0 md:top-0 md:left-0 transition-all duration-300 ease-in-out">
+
+        <nav id="menu"
+            class="hidden md:flex flex-col md:flex-row items-center w-full md:w-auto absolute md:relative top-24 left-0 md:top-0 md:left-0 transition-all duration-300 ease-in-out">
             <ul class="flex flex-col md:hidden items-center w-full divide-y divide-gray-300 bg-[#BF2121]">
                 <li><a href="#home"
                         class="block w-full text-center py-3 hover:bg-white hover:text-[#BF2121] transition-all duration-200 text-lg">Home</a>
@@ -90,8 +94,9 @@
     <main class="w-full pt-24">
         <!-- HOME -->
         <section id="home" class="scroll-mt-24 w-full bg-black">
-            <div class="flex flex-wrap justify-center items-center gap-x-10 lg:gap-x-20 py-10  p-4" >
-                <div class="flex flex-col flex-wrap justify-center items-center text-center md:text-start md:items-start w-[20rem]">
+            <div class="flex flex-wrap justify-center items-center gap-x-10 lg:gap-x-20 py-10  p-4">
+                <div
+                    class="flex flex-col flex-wrap justify-center items-center text-center md:text-start md:items-start w-[20rem]">
                     <p class="lg:text-4xl 2xl:text-5xl text-3xl font-bold">
                         Qualidade no serviço e
                         compromisso com o cliente. <br>
@@ -103,14 +108,16 @@
                             target="_blank">Agende um orçamento conosco!</a></button>
                 </div>
                 <div>
-                    <img src="./carro-banner-inicial.jpg" alt="Imagem de um carro no banner principal" class="w-[20rem] lg:w-[34rem] border-2 rounded-md">
+                    <img src="./carro-banner-inicial.jpg" alt="Imagem de um carro no banner principal"
+                        class="w-[20rem] lg:w-[34rem] border-2 rounded-md">
                 </div>
             </div>
         </section>
         <!-- SOBRE -->
         <section id="sobre" class="scroll-mt-24 w-full bg-[#9FA2A6]">
             <div class="flex flex-wrap justify-center items-center gap-x-10 xl:py-10 px-4">
-                <h1 class="sm:w-full text-center text-3xl lg:text-4xl 2xl:text-5xl align-top font-semibold p-4">Sobre nós</h1>
+                <h1 class="sm:w-full text-center text-3xl lg:text-4xl 2xl:text-5xl align-top font-semibold p-4">Sobre
+                    nós</h1>
                 <!-- SLIDER -->
                 <div class="slider-container border-2 rounded-md 2xl:size[40rem] size-[28rem] relative">
                     <!-- Slider principal -->
@@ -137,11 +144,12 @@
                 <div class="flex flex-col flex-wrap text-justify w-[40rem]">
                     <p class="text-lg p-4">
                         A F Autos é uma oficina especializada em serviços de pintura automotiva, reconhecida pela
-                        qualidade e precisão no atendimento ao cliente. Com mais de 20 anos de experiência no setor, seu
-                        fundador, um ex-especialista de grandes corporações, decidiu criar um espaço onde a excelência
-                        no acabamento e a atenção aos detalhes são prioridades. Utilizando técnicas avançadas e produtos
-                        de alta performance, a F Autos se destaca pela eficiência no processo de recuperação e
-                        personalização de veículos, garantindo resultados impecáveis e a satisfação de cada cliente.
+                        qualidade e precisão no atendimento ao cliente com atuação no mercado desde 2018. Com mais de 30 anos de experiência no setor de
+                        funilaria e pintura automotiva, seu fundador, um ex-especialista de grandes corporações, decidiu
+                        criar um espaço onde o foco na qualidade do serviço e o compromisso com o cliente são prioridades. 
+                        Utilizando técnicas avançadas e produtos de alta performance, a F Autos se destaca pela eficiência 
+                        no processo de recuperação e personalização de veículos, garantindo resultados impecáveis e a satisfação 
+                        de cada cliente.
                     </p>
                 </div>
             </div>
@@ -192,7 +200,8 @@
         </section>
         <!-- TESTEMUNHOS -->
         <section id="testemunhos" class="scroll-mt-24 w-full bg-[#9FA2A6]">
-            <h1 class="text-center text-3xl lg:text-4xl 2xl:text-5xl align-center font-semibold p-4">Depoimentos de nossos clientes</h1>
+            <h1 class="text-center text-3xl lg:text-4xl 2xl:text-5xl align-center font-semibold p-4">Depoimentos de
+                nossos clientes</h1>
             <div class="flex flex-wrap justify-center items-center px-4 relative z-0">
 
                 <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" class="w-full gap-y-10 p-4">
@@ -240,7 +249,8 @@
                     </div>
                 </div>
 
-                <div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000" class="w-full gap-y-10 pb-10 p-4">
+                <div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000"
+                    class="w-full gap-y-10 pb-10 p-4">
                     <div>
                         <h1 class="text-center text-2xl align-center font-semibold">Maria Oliveira</h1>
                     </div>
@@ -250,7 +260,7 @@
                     <div class="flex items-center justify-center">
                         <p class="w-[40rem] text-lg text-center italic">
                             "Tive que consertar um amassado no porta-malas e aproveitei para fazer um polimento.
-                             Serviço rápido, de confiança e o carro parece novinho!"
+                            Serviço rápido, de confiança e o carro parece novinho!"
                         </p>
                     </div>
                 </div>
@@ -261,14 +271,17 @@
         <section id="contato" class="scroll-mt-24 w-full bg-[black]">
             <h1 class="text-center text-3xl lg:text-4xl 2xl:text-5xl align-center font-semibold p-4">Contato</h1>
             <div class="flex flex-wrap justify-center items-center p-4 relative z-0">
-                <form id="contactForm" action="" class="flex flex-col justify-center items-start w-[24rem] md:w-[40rem]">
+                <form id="contactForm" action=""
+                    class="flex flex-col justify-center items-start w-[24rem] md:w-[40rem]">
                     <label for="nome" class="text-lg mb-1">Nome: </label>
                     <input type="text" name="nome" id="nome"
-                        class="text-black mb-4 w-full px-4 py-2 border-2 rounded-md focus:outline-none" placeholder="Seu nome" required>
+                        class="text-black mb-4 w-full px-4 py-2 border-2 rounded-md focus:outline-none"
+                        placeholder="Seu nome" required>
 
                     <label for="email" class="text-lg mb-1">Email: </label>
                     <input type="email" name="email" id="email"
-                        class="text-black mb-4 w-full px-4 py-2 border-2 rounded-md focus:outline-none" placeholder="Seu email" required>
+                        class="text-black mb-4 w-full px-4 py-2 border-2 rounded-md focus:outline-none"
+                        placeholder="Seu email" required>
 
                     <label for="mensagem" class="text-lg mb-1">Sua mensagem: </label>
                     <textarea name="mensagem" id="mensagem"
@@ -279,8 +292,7 @@
                         <button id="enviarDados" type="submit"
                             class="active:scale-95 active:shadow-white active:shadow mb-4 pl-4 border-2 rounded-md px-4 py-2 hover:bg-white hover:text-black text-lg">Enviar</button>
 
-                        <p class="text-lg">Ou nos envie um <a
-                                href="https://wa.me/5585996483792" target="_blank"
+                        <p class="text-lg">Ou nos envie um <a href="https://wa.me/5585996483792" target="_blank"
                                 class="text-green-500 underline hover:scale-95">Zap!</a></p>
                     </div>
                 </form>
@@ -290,26 +302,30 @@
     <!-- FOOTER -->
     <footer>
         <section class="w-full bg-[#9FA2A6]">
-            <div class="flex flex-wrap justify-center items-center md:gap-x-20 lg:gap-x-20 xl:gap-x-40 2xl:gap-x-[50%] p-4">
+            <div
+                class="flex flex-wrap justify-center items-center md:gap-x-20 lg:gap-x-20 xl:gap-x-40 2xl:gap-x-[50%] p-4">
                 <div class="">
                     <div class="flex justify-start items-center py-2">
                         <img src="./local.png" alt="ícone de local" class="w-8">
-                        <a href="https://maps.app.goo.gl/mVoSFcYhUPuNCvsQ7" class="pl-2 hover:underline" target="_blank">Av. Dionísio Leonel Alencar, 1520 - Ancuri - Fortaleza</a>
+                        <a href="https://maps.app.goo.gl/mVoSFcYhUPuNCvsQ7" class="pl-2 hover:underline"
+                            target="_blank">Av. Dionísio Leonel Alencar, 1520 - Ancuri - Fortaleza</a>
                     </div>
 
                     <div class="flex justify-start items-center pb-2">
                         <img src="./email.png" alt="ícone de email" class="w-8">
-                        <a href="mailto:fautos150@gmail.com" class="pl-2 hover:underline" target="_blank">fautos150@gmail.com</a>
+                        <a href="mailto:fautos150@gmail.com" class="pl-2 hover:underline"
+                            target="_blank">fautos150@gmail.com</a>
                     </div>
-                    
+
                     <div class="flex justify-start items-center pb-2">
                         <img src="./telefone.png" alt="ícone de telefone" class="w-8">
                         <p class="pl-2">(85) 99648-3792</p>
                     </div>
-                    
+
                     <div class="flex justify-start items-center pb-2">
                         <img src="./instagram.png" alt="ícone de instagram" class="w-8">
-                        <a href="https://www.instagram.com/f_autos_ca/" class="pl-2 hover:underline" target="_blank">f_autos_ca</a>
+                        <a href="https://www.instagram.com/f_autos_ca/" class="pl-2 hover:underline"
+                            target="_blank">f_autos_ca</a>
                     </div>
                 </div>
 
@@ -321,22 +337,24 @@
                 </div>
             </div>
             <div class="w-full text-center py-10">
-                <p class="text-base">Desenvolvido por <a href="https://github.com/paulodiego" class="hover:underline" target="_blank">Paulo Diego©</a></p>
+                <p class="text-base">Desenvolvido por <a href="https://github.com/paulodiego" class="hover:underline"
+                        target="_blank">Paulo Diego©</a></p>
             </div>
         </section>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init({
-        offset: 120, 
-        duration: 800,
-        once: true,
-    });</script>
+            offset: 120,
+            duration: 800,
+            once: true,
+        });</script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./slider.js"></script>
-    
+
     <script src="./emailjs.js"></script>
 
     <script src="./menu.js"></script>
 </body>
+
 </html>
